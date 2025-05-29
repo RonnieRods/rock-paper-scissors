@@ -1,4 +1,5 @@
 let computer = '';
+let human = '';
 
 function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3);
@@ -20,4 +21,4 @@ function getHumanChoice() {
         console.log("Try typing rock, paper or scissors!");
         getHumanChoice();
     }
-  }
+}
