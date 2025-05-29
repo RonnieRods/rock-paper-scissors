@@ -14,7 +14,10 @@ function getComputerChoice() {
 function getHumanChoice() {
     human = prompt('Please enter Rock, Paper or Scissors:');
     human = human.charAt(0).toUpperCase() + human.slice(1, human.length);
-    if (human !== "Rock" || human !== "Paper" || human !== "Scissors") {
-      console.log("Try typing rock, paper or scissors.")
+    if (human === "Rock" || human === "Paper" || human === "Scissors") {
+        console.log(human);
+    } else {
+        console.log("Try typing rock, paper or scissors!");
+        getHumanChoice();
     }
   }
