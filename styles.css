@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 24vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.header p,
+#scores,
+#finalScore,
+#statement {
+    font-size: 30px;;
+    text-align: center;
+}
+
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#choices button,
+#resetBtn {
+    flex: 1;
+    padding: 10px 30px;
+    font-size: 50px;
+}
